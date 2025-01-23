@@ -1,0 +1,17 @@
+{
+    "name": "damien/template_finance_business",
+    "autoload": {
+        "psr-4": {
+            "Damien\\TemplateFinanceBusiness\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Damienjob",
+            "email": "jobdamien6@gmail.com"
+        }
+    ],
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
+}
