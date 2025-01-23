@@ -1,0 +1,136 @@
+ /* Responsiveness */
+@media (max-width: 1200px) {
+    header .btn-getstarted {
+      order: 2;
+      margin: 0 15px 0 0;
+      padding: 6px 15px;
+    }
+  
+  }
+@media (max-width: 992px) {
+	.navbar .navbar-brand {
+		position: absolute;
+		left: 30px;
+		top: 10px;
+	}
+	.navbar .navbar-brand {
+		width: auto;
+	}
+	.navbar:after {
+		display: none;
+	}
+	#navbarResponsive {
+	    z-index: 99999;
+	    position: absolute;
+	    top: 80px;
+	    left: 0;
+	    width: 100%;
+	    text-align: center;
+	    background-color: #fff;
+	    box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+	}
+	.navbar .navbar-nav .nav-item {
+		border-bottom: 1px solid #25db05;
+	}
+	.navbar .navbar-nav .nav-item:last-child {
+		border-bottom: none;
+	}
+	.navbar .navbar-nav a.nav-link {
+		padding: 15px 0px;
+		color: #1e1e1e!important;
+	}
+	.navbar .navbar-nav .nav-link:hover,
+	.navbar .navbar-nav .active>.nav-link,
+	.navbar .navbar-nav .nav-link.current,
+	.navbar .navbar-nav .nav-link.show,
+	.navbar .navbar-nav .show>.nav-link {
+		color: #19CDFE!important;
+		border-bottom: none!important;
+	}
+	.navbar .right-icons {
+		margin-left: 55px;
+	  }
+	
+	  .navbar .right-icons li a {
+		font-size: 50px;
+	  }
+	
+	  .navbar-toggler {
+		order: 1; /* Place le bouton toggle après les icônes de langue */
+	  }
+	
+	  .right-icons {
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		margin-bottom: 0;
+		padding: 0;
+	  }
+}
+  /* Écrans en dessous de 768px (tablettes et smartphones) */
+  @media (max-width: 768px) {
+    .sub-header {
+      height: auto; /* Permet à la hauteur de s'adapter au contenu */
+      line-height: normal; /* Supprime l'alignement vertical fixe */
+    }
+  
+    .sub-header ul.right-icons {
+      float: none; /* Centrer la liste sur l'écran */
+      text-align: center;
+    }
+  
+    .sub-header ul.right-icons li {
+      display: block; /* Affiche les langues l'une sous l'autre */
+      margin: 10px 0; /* Ajoute de l'espace entre les langues */
+      border: none; /* Supprime les bordures */
+    }
+    .services .service-item {
+		margin-bottom: 30px;
+	}
+	.fun-facts .left-content {
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	footer {
+		padding: 80px 0px 20px 0px;
+	}
+	footer .footer-item {
+		border-bottom: 1px solid #343434;
+		margin-bottom: 30px;
+		padding-bottom: 30px;
+	}
+	footer .last-item {
+		border-bottom: none;
+	}
+	.about-info .right-content {
+		margin-right: 0px;
+		margin-bottom: 30px;
+	}
+	.team .team-item {
+		margin-bottom: 30px;
+	}
+	.tabs-content {
+		margin-left: 0px;
+		margin-top: 30px;
+	}
+	.contact-item {
+		margin-bottom: 30px;
+	}
+  }
+  
+  /* Écrans très petits en dessous de 576px (smartphones en mode portrait) */
+  @media (max-width: 576px) {
+    .sub-header ul.right-icons li {
+      margin: 15px 0; /* Ajoute plus d'espace entre les boutons sur très petits écrans */
+    }
+  
+    /* Ajuste encore la taille des boutons */
+    .sub-header ul.right-icons li a {
+      font-size: 15px; /* Réduit la taille du texte */
+    }
+  
+    /* Ajoute un padding pour les éléments de la liste */
+    .sub-header ul.right-icons li a {
+      padding: 0 10px; /* Ajoute un peu de padding horizontal pour donner de l'espace autour des boutons */
+    }
+  }

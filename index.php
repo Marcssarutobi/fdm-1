@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="TemplateMo" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Accueil | Fondation Divine Miséricorde</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/owl.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      /* CSS pour uniformiser les hauteurs des colonnes */
+      .equal-height {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .equal-height > .col-md-4 {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card,.service-item {
+        flex: 1; /* Les cartes s'étirent également pour avoir la même hauteur */
+      }
+
+      .card img,.service-item img {
+        object-fit: cover; /* Les images restent proportionnelles */
+        height: 200px; /* Hauteur fixe pour toutes les images */
+      }
+      .service-item img{
+        height: 260px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+      <div class="jumper">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+    <!-- Header -->
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+                            <ul class="right-icons" id="language-buttons">
+
+                            <li><a id="fr-button" style="cursor:pointer;">Français</a></li>
+                            <li><a id="en-button" style="cursor:pointer;">English</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.php">            
+            <img src="assets/images/logo.jpg" alt="Logo Fondation Divine Miséricorde" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto ">
+            <li class="nav-item active"><a class="nav-link" href="index.php" id="home"></a></li>
+            <li class="nav-item "><a class="nav-link" href="about.php" id="about"></a></li>
+            <li class="nav-item"><a class="nav-link" href="services.php" id="services"></a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.php" id="contact"></a></li>
+            <a class="btn-getstarted" href="index.php#about" id="donate"></a>
+          </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+      <div class="Modern-Slider">
+        <!-- Item -->
+        <div class="item item-1">
+          <div class="img-fill">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner Ends Here -->
+     <!-- Objective Section Start -->
+    <div class="objective-section" >
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Objectives Section -->
+          <div class="">
+            <div class="section-heading content">
+              <h2 id="titre"></h2>
+              <p style="margin-top: 20px; font-size: 1.2em; color: #4e4f50; line-height: 1.8;" id="text"></p>              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- Objective Section End -->
+
+    <!-- Services start -->
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading heading_center">
+              <h2 id="titre2"></h2>
+              <span id="text2"
+                ></span
+              >
+            </div>
+          </div>
+          <div class="row equal-height">
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="assets/images/sante.jpg" alt="" />
+                <div class="down-content">
+                  <h4 id="titre3"></h4>
+                  <p id="text3">
+                    
+                  </p>
+                  <a href="services.php#tabs-1" class="filled-button" id="button1"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="assets/images/edu.jpg" alt="" />
+                <div class="down-content">
+                  <h4 class="mt-3" id="titre4"></h4>
+                  <p id="text4">
+                    
+                  </p>
+                  <a href="services.php#tabs-2" class="mt-3 filled-button"
+                  id="button2"></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="assets/images/91121.jpg" alt="" />
+                <div class="down-content">
+                  <h4 class="mt-3" id="titre5"></h4>
+                  <p id="text5">
+                    
+                  </p>
+                  <a href="services.php#tabs-3" class="mt-5 filled-button"
+                  id="button3"></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="assets/images/auto.jpg" alt="" />
+                <div class="down-content">
+                  <h4 id="titre6"></h4>
+                  <p id="text6">
+                    
+                  </p>
+                  <a href="services.php#tabs-4" class="filled-button"
+                  id="button4"></a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="service-item">
+                <img src="assets/images/dev.jpg" alt="" />
+                <div class="down-content">
+                  <h4 id="titre7"></h4>
+                  <p id="text7"></p>
+                  <a href="services.php#tabs-5" class="filled-button"
+                  id="button5"></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Service end -->
+    <!-- Valeur start -->
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <!-- Section gauche : Introduction des valeurs de l'entreprise -->
+          <div class="col-md-6">
+            <div class="left-content">
+              <span id="titre8"></span>
+              <h2 id="titre9"></em></h2>
+              <p id="text8">
+                
+              </p>
+            </div>
+          </div>
+
+          <!-- Section droite : Liste des valeurs -->
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count"><i class="fa-solid fa-gavel"></i></div>
+                  <div class="count-title" id="titre10"></div>
+                  <p id="text9">
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count"><i class="fa-solid fa-handshake"></i></div>
+                  <div class="count-title" id="titre11"></div>
+                  <p id="text10"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count">
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                  </div>
+                  <div class="count-title" id="titre12"></div>
+                  <p id="text11">
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count">
+                    <i class="fa fa-heart" aria-hidden="true"></i>
+                  </div>
+                  <div class="count-title" id="titre13"></div>
+                  <p id="text12">
+                    
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count">
+                    <i class="fa fa-share-alt" aria-hidden="true"></i>
+                  </div>
+                  <div class="count-title" id="titre14"></div>
+                  <p id="text13"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count">
+                    <i class="fa fa-eye" aria-hidden="true"></i>
+                  </div>
+                  <div class="count-title" id="titre15"></div>
+                  <p id="text14">
+                    
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Valeur end -->
+    <!-- activité start -->
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading heading_center">
+              <h2 id="titre16"></h2>
+              <span id="text15"
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Cartes du haut -->
+        <div class="row equal-height">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité1/image.jpg"
+                alt="Activité 1"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre17">
+                    
+                  </strong>
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a href="Activité_sensibilisation.php" class="filled-button" id="button6"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité2/image.jpg"
+                alt="Activité 2"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre18"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a href="Activité_gestion-projet.php" class="filled-button" id="button7"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité3/image.jpg"
+                alt="Activité 3"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre19"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="Activité_mission-chirurgicale.php"
+                    class="filled-button" id="button8"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cartes du bas -->
+        <div class="row equal-height mt-5">
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité4/image.jpg"
+                alt="Activité 4"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre20"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="Activité_gestion-hospitalière.php"
+                    class="filled-button" id="button9"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité5/6008046299892532262.jpg"
+                alt="Activité 5"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre21"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="Activité_management-d'équipe.php"
+                    class="filled-button" id="button10"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité6/image.jpg"
+                alt="Activité 6"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre22"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="Activité_proctection des droits.php"
+                    class="filled-button" id="button11"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- activité end -->
+
+    <!-- Footer Starts Here -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3 footer-item ">
+            <h4 id="nom"></h4>
+            <ul class="social-icons">
+              <li>
+                <a rel="nofollow" href="https://www.facebook.com/share/p/14dDtSat98/?mibextid=wwXIfr" target="_blank"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item content">
+            <h4 id="lien"></h4>
+            <ul class="menu-list content">
+              <li><a href="index.php" id="home1"></a></li>
+              <li><a href="about.php" id="about1"></a></li>
+              <li><a href="services.php" id="services1"></a></li>
+              <li><a href="contact.php" id="contact1"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item footer-item2 content">
+            <h4 id="domaine"></h4>
+            <ul class="menu-list content">
+              <li><a href="services.php#tabs-1" id="serv1"></a></li>
+              <li><a href="services.php#tabs-2" id="serv2"></a></li>
+              <li><a href="services.php#tabs-3" id="serv3"></a></li>
+              <li><a href="services.php#tabs-4" id="serv4"></a></li>
+              <li><a href="services.php#tabs-5" id="serv5"></a></li>
+            </ul>
+          </div>
+          <div class="col-md-3 footer-item last-item footer-newsletter">
+            <div class="content">
+            <h4 id="lettre"></h4>
+            <p id="lettretext"></p>
+            </div>
+            <form id="newsletter-form" class="php-email-form content">
+              <div class="newsletter-form"><input type="email" name="email" required><input type="submit" id="subscribe-button" value="S'abonner"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+  <div class="sub-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <p>
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            <strong id="texte"></strong>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Additional Scripts -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/owl.js"></script>
+    <script src="assets/js/slick.js"></script>
+    <script src="assets/js/accordions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<script language="text/Javascript">
+  cleared[0] = cleared[1] = cleared[2] = 0; //set a cleared flag for each field
+  function clearField(t) {                   //declaring the array outside of the
+    if (!cleared[t.id]) {                      // function makes it static and global
+      cleared[t.id] = 1;  // you could use true and false, but that's more typing
+      t.value = '';         // with more chance of typos
+      t.style.color = '#fff';
+    }
+  }
+</script>
+<script>
+document.getElementById('newsletter-form').addEventListener('submit', function (event) {
+  event.preventDefault(); // Empêche le formulaire de se soumettre normalement
+
+  var email = document.querySelector('input[name="email"]').value;
+
+  // Vérifier si l'email est valide
+  if (validateEmail(email)) {
+    // Envoi AJAX du formulaire
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', 'newsletter.php', true);
+    xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    
+    xhr.onreadystatechange = function() {
+      if (xhr.readyState === 4 && xhr.status === 200) {
+        var response = JSON.parse(xhr.responseText);
+        
+        // Afficher SweetAlert2 en fonction de la réponse
+        if (response.success) {
+          Swal.fire({
+            icon: 'success',
+            title: 'Merci pour votre abonnement!',
+            text: 'Nous vous enverrons nos dernières nouvelles à ' + email + '.'
+          }).then(() => {
+            // Réinitialiser le formulaire après succès
+            document.getElementById('newsletter-form').reset();
+          });
+        } else {
+          Swal.fire({
+            icon: 'error',
+            title: 'Erreur',
+            text: response.message
+          });
+        }
+      }
+    };
+
+    xhr.send('email=' + encodeURIComponent(email));
+  } else {
+    Swal.fire({
+      icon: 'error',
+      title: 'Email invalide',
+      text: 'Veuillez entrer un email valide.'
+    });
+  }
+});
+
+// Fonction de validation de l'email
+function validateEmail(email) {
+  var regex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+  return regex.test(email);
+}
+</script>
+<script>
+  let translations = {};
+
+  // Charger le fichier JSON de traductions
+  fetch('langue.json')
+    .then(response => response.json())
+    .then(data => {
+      translations = data; // Stocke les traductions dans l'objet
+
+      // Récupère la langue à partir de l'URL ou de localStorage
+      const urlParams = new URLSearchParams(window.location.search);
+      const urlLanguage = urlParams.get('lang');
+      const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Défaut : 'fr'
+
+      // Si une langue est spécifiée dans l'URL, utiliser celle-ci
+      const currentLanguage = urlLanguage || savedLanguage;
+      switchLanguage(currentLanguage);
+
+      // Met à jour l'URL si elle ne contient pas la langue
+      if (!urlLanguage) {
+        updateURLWithLanguage(currentLanguage);
+      }
+    })
+    .catch(error => console.error('Erreur de chargement du fichier de traduction:', error));
+
+  // Fonction pour changer la langue
+  function switchLanguage(lang) {
+    const langData = translations[lang];
+    if (langData) {
+      // Mettre à jour tous les éléments du site avec les traductions
+      document.getElementById('home').textContent = langData.home;
+      document.getElementById('about').textContent = langData.about;
+      document.getElementById('services').textContent = langData.services;
+      document.getElementById('contact').textContent = langData.contact;
+      document.getElementById('home1').textContent = langData.home;
+      document.getElementById('about1').textContent = langData.about;
+      document.getElementById('services1').textContent = langData.services;
+      document.getElementById('contact1').textContent = langData.contact;
+      document.getElementById('donate').textContent = langData.donate;
+      document.getElementById('serv1').textContent = langData.serv1;
+      document.getElementById('serv2').textContent = langData.serv2;
+      document.getElementById('serv3').textContent = langData.serv3;
+      document.getElementById('serv4').textContent = langData.serv4;
+      document.getElementById('serv5').textContent = langData.serv5;
+      document.getElementById('lien').textContent = langData.lien;
+      document.getElementById('domaine').textContent = langData.domaine;
+      document.getElementById('nom').textContent = langData.nom;
+      document.getElementById('texte').textContent = langData.texte;
+      document.getElementById('lettre').textContent = langData.lettre;
+      document.getElementById('lettretext').textContent = langData.lettretext;
+      document.getElementById('titre').innerHTML = langData.titre;
+      document.getElementById('text').innerHTML = langData.text;
+      document.getElementById('titre2').innerHTML = langData.titre2;
+      document.getElementById('text2').textContent = langData.text2;
+      document.getElementById('titre3').textContent = langData.titre3;
+      document.getElementById('text3').textContent = langData.text3;
+      document.getElementById('titre4').textContent = langData.titre4;
+      document.getElementById('text4').textContent = langData.text4;
+      document.getElementById('titre5').textContent = langData.titre5;
+      document.getElementById('text5').textContent = langData.text5;
+      document.getElementById('titre6').textContent = langData.titre6;
+      document.getElementById('text6').textContent = langData.text6;
+      document.getElementById('titre7').textContent = langData.titre7;
+      document.getElementById('text7').textContent = langData.text7;
+      document.getElementById('titre8').textContent = langData.titre8;
+      document.getElementById('text8').innerHTML = langData.text8;
+      document.getElementById('titre9').innerHTML = langData.titre9;
+      document.getElementById('text9').textContent = langData.text9;
+      document.getElementById('titre10').textContent = langData.titre10;
+      document.getElementById('titre11').textContent = langData.titre11;
+      document.getElementById('text10').textContent = langData.text10;
+      document.getElementById('titre12').textContent = langData.titre12;
+      document.getElementById('text11').textContent = langData.text11;
+      document.getElementById('titre13').textContent = langData.titre13;
+      document.getElementById('text12').textContent = langData.text12;
+      document.getElementById('titre14').textContent = langData.titre14;
+      document.getElementById('text13').textContent = langData.text13;
+      document.getElementById('titre15').textContent = langData.titre15;
+      document.getElementById('text14').textContent = langData.text14;
+      document.getElementById('titre16').innerHTML = langData.titre16;
+      document.getElementById('text15').textContent = langData.text15;
+      document.getElementById('titre17').textContent = langData.titre17;
+      document.getElementById('titre18').textContent = langData.titre18;
+      document.getElementById('titre19').textContent = langData.titre19;
+      document.getElementById('titre20').textContent = langData.titre20;
+      document.getElementById('titre21').textContent = langData.titre21;
+      document.getElementById('titre22').textContent = langData.titre22;
+      document.getElementById('button1').textContent = langData.button1;
+      document.getElementById('button2').textContent = langData.button2;
+      document.getElementById('button3').textContent = langData.button3;
+      document.getElementById('button4').textContent = langData.button4;
+      document.getElementById('button5').textContent = langData.button5;
+      document.getElementById('button6').textContent = langData.button6;
+      document.getElementById('button7').textContent = langData.button7;
+      document.getElementById('button8').textContent = langData.button8;
+      document.getElementById('button9').textContent = langData.button9;
+      document.getElementById('button10').textContent = langData.button10;
+      document.getElementById('button11').textContent = langData.button11;
+      document.getElementById('subscribe-button').value = langData.subscribe;
+
+
+      // Stocke la langue choisie dans localStorage
+      localStorage.setItem('selectedLanguage', lang);
+
+      // Met à jour l'URL pour inclure la langue
+      updateURLWithLanguage(lang);
+    }
+  }
+
+  // Fonction pour mettre à jour l'URL avec le paramètre de langue
+  function updateURLWithLanguage(lang) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang);
+    window.history.replaceState({}, '', url); // Met à jour l'URL sans recharger la page
+  }
+
+  // Écouteurs pour les boutons de langue
+  document.getElementById('fr-button').addEventListener('click', () => switchLanguage('fr'));
+  document.getElementById('en-button').addEventListener('click', () => switchLanguage('en'));
+</script>
+  </body>
+</html>
