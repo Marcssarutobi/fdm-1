@@ -465,6 +465,29 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4">
+            <div class="card mb-4 box-shadow">
+              <img
+                class="card-img-top"
+                src="assets/images/Activité7/image1.jpg"
+                alt="Activité 7"
+              />
+              <div class="card-body">
+                <p class="text-black">
+                  <strong id="titre23"
+                    ></strong
+                  >
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <a
+                    href="Activite_mission-humanitaire.php"
+                    class="filled-button" id="button12"
+                    ></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -618,122 +641,146 @@ function validateEmail(email) {
 <script>
   let translations = {};
 
-  // Charger le fichier JSON de traductions
-  fetch('langue.json')
-    .then(response => response.json())
-    .then(data => {
-      translations = data; // Stocke les traductions dans l'objet
+// Charger les deux fichiers JSON de traductions
+Promise.all([
+    fetch('langue.json').then(response => response.json()),  // Premier fichier JSON
+    fetch('language.json').then(response => response.json())  // Deuxième fichier JSON
+])
+.then(([data1, data2]) => {
+    console.log("Fichier 1 chargé:", data1); // Vérification du premier fichier
+    console.log("Fichier 2 chargé:", data2); // Vérification du deuxième fichier
 
-      // Récupère la langue à partir de l'URL ou de localStorage
-      const urlParams = new URLSearchParams(window.location.search);
-      const urlLanguage = urlParams.get('lang');
-      const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Défaut : 'fr'
+    for (let lang in data1) {
+    translations[lang] = { ...data1[lang] }; // Crée un nouvel objet pour chaque langue
+  }
 
-      // Si une langue est spécifiée dans l'URL, utiliser celle-ci
-      const currentLanguage = urlLanguage || savedLanguage;
-      switchLanguage(currentLanguage);
-
-      // Met à jour l'URL si elle ne contient pas la langue
-      if (!urlLanguage) {
-        updateURLWithLanguage(currentLanguage);
-      }
-    })
-    .catch(error => console.error('Erreur de chargement du fichier de traduction:', error));
-
-  // Fonction pour changer la langue
-  function switchLanguage(lang) {
-    const langData = translations[lang];
-    if (langData) {
-      // Mettre à jour tous les éléments du site avec les traductions
-      document.getElementById('home').textContent = langData.home;
-      document.getElementById('about').textContent = langData.about;
-      document.getElementById('services').textContent = langData.services;
-      document.getElementById('contact').textContent = langData.contact;
-      document.getElementById('home1').textContent = langData.home;
-      document.getElementById('about1').textContent = langData.about;
-      document.getElementById('services1').textContent = langData.services;
-      document.getElementById('contact1').textContent = langData.contact;
-      document.getElementById('donate').textContent = langData.donate;
-      document.getElementById('serv1').textContent = langData.serv1;
-      document.getElementById('serv2').textContent = langData.serv2;
-      document.getElementById('serv3').textContent = langData.serv3;
-      document.getElementById('serv4').textContent = langData.serv4;
-      document.getElementById('serv5').textContent = langData.serv5;
-      document.getElementById('lien').textContent = langData.lien;
-      document.getElementById('domaine').textContent = langData.domaine;
-      document.getElementById('nom').textContent = langData.nom;
-      document.getElementById('texte').textContent = langData.texte;
-      document.getElementById('lettre').textContent = langData.lettre;
-      document.getElementById('lettretext').textContent = langData.lettretext;
-      document.getElementById('titre').innerHTML = langData.titre;
-      document.getElementById('text').innerHTML = langData.text;
-      document.getElementById('titre2').innerHTML = langData.titre2;
-      document.getElementById('text2').textContent = langData.text2;
-      document.getElementById('titre3').textContent = langData.titre3;
-      document.getElementById('text3').textContent = langData.text3;
-      document.getElementById('titre4').textContent = langData.titre4;
-      document.getElementById('text4').textContent = langData.text4;
-      document.getElementById('titre5').textContent = langData.titre5;
-      document.getElementById('text5').textContent = langData.text5;
-      document.getElementById('titre6').textContent = langData.titre6;
-      document.getElementById('text6').textContent = langData.text6;
-      document.getElementById('titre7').textContent = langData.titre7;
-      document.getElementById('text7').textContent = langData.text7;
-      document.getElementById('titre8').textContent = langData.titre8;
-      document.getElementById('text8').innerHTML = langData.text8;
-      document.getElementById('titre9').innerHTML = langData.titre9;
-      document.getElementById('text9').textContent = langData.text9;
-      document.getElementById('titre10').textContent = langData.titre10;
-      document.getElementById('titre11').textContent = langData.titre11;
-      document.getElementById('text10').textContent = langData.text10;
-      document.getElementById('titre12').textContent = langData.titre12;
-      document.getElementById('text11').textContent = langData.text11;
-      document.getElementById('titre13').textContent = langData.titre13;
-      document.getElementById('text12').textContent = langData.text12;
-      document.getElementById('titre14').textContent = langData.titre14;
-      document.getElementById('text13').textContent = langData.text13;
-      document.getElementById('titre15').textContent = langData.titre15;
-      document.getElementById('text14').textContent = langData.text14;
-      document.getElementById('titre16').innerHTML = langData.titre16;
-      document.getElementById('text15').textContent = langData.text15;
-      document.getElementById('titre17').textContent = langData.titre17;
-      document.getElementById('titre18').textContent = langData.titre18;
-      document.getElementById('titre19').textContent = langData.titre19;
-      document.getElementById('titre20').textContent = langData.titre20;
-      document.getElementById('titre21').textContent = langData.titre21;
-      document.getElementById('titre22').textContent = langData.titre22;
-      document.getElementById('button1').textContent = langData.button1;
-      document.getElementById('button2').textContent = langData.button2;
-      document.getElementById('button3').textContent = langData.button3;
-      document.getElementById('button4').textContent = langData.button4;
-      document.getElementById('button5').textContent = langData.button5;
-      document.getElementById('button6').textContent = langData.button6;
-      document.getElementById('button7').textContent = langData.button7;
-      document.getElementById('button8').textContent = langData.button8;
-      document.getElementById('button9').textContent = langData.button9;
-      document.getElementById('button10').textContent = langData.button10;
-      document.getElementById('button11').textContent = langData.button11;
-      document.getElementById('subscribe-button').value = langData.subscribe;
-
-
-      // Stocke la langue choisie dans localStorage
-      localStorage.setItem('selectedLanguage', lang);
-
-      // Met à jour l'URL pour inclure la langue
-      updateURLWithLanguage(lang);
+  for (let lang in data2) {
+    if (translations[lang]) {
+      // Fusionner les données si la langue existe déjà
+      translations[lang] = { ...translations[lang], ...data2[lang] };
+    } else {
+      // Si la langue n'existe pas, ajouter les données de data2
+      translations[lang] = { ...data2[lang] };
     }
   }
 
-  // Fonction pour mettre à jour l'URL avec le paramètre de langue
-  function updateURLWithLanguage(lang) {
+    // Vérification après fusion
+    console.log("Traductions fusionnées:", translations);
+
+    // Récupérer la langue à partir de l'URL ou de localStorage
+    const urlParams = new URLSearchParams(window.location.search);
+    const urlLanguage = urlParams.get('lang');
+    const savedLanguage = localStorage.getItem('selectedLanguage') || 'fr'; // Par défaut 'fr'
+
+    // Utiliser la langue spécifiée dans l'URL ou celle stockée dans localStorage
+    const currentLanguage = urlLanguage || savedLanguage;
+    switchLanguage(currentLanguage);
+
+    // Mettre à jour l'URL si elle ne contient pas la langue
+    if (!urlLanguage) {
+        updateURLWithLanguage(currentLanguage);
+    }
+})
+.catch(error => console.error('Erreur de chargement des fichiers de traduction:', error));
+
+// Fonction pour changer la langue
+function switchLanguage(lang) {
+    const langData = translations[lang];
+    if (langData) {
+        // Mettre à jour tous les éléments du site avec les traductions
+        document.getElementById('home').textContent = langData.home;
+        document.getElementById('about').textContent = langData.about;
+        document.getElementById('services').textContent = langData.services;
+        document.getElementById('contact').textContent = langData.contact;
+        document.getElementById('home1').textContent = langData.home;
+        document.getElementById('about1').textContent = langData.about;
+        document.getElementById('services1').textContent = langData.services;
+        document.getElementById('contact1').textContent = langData.contact;
+        document.getElementById('donate').textContent = langData.donate;
+        document.getElementById('serv1').textContent = langData.serv1;
+        document.getElementById('serv2').textContent = langData.serv2;
+        document.getElementById('serv3').textContent = langData.serv3;
+        document.getElementById('serv4').textContent = langData.serv4;
+        document.getElementById('serv5').textContent = langData.serv5;
+        document.getElementById('lien').textContent = langData.lien;
+        document.getElementById('domaine').textContent = langData.domaine;
+        document.getElementById('nom').textContent = langData.nom;
+        document.getElementById('texte').textContent = langData.texte;
+        document.getElementById('lettre').textContent = langData.lettre;
+        document.getElementById('lettretext').textContent = langData.lettretext;
+        document.getElementById('titre').innerHTML = langData.titre;
+        document.getElementById('text').innerHTML = langData.text;
+        document.getElementById('titre2').innerHTML = langData.titre2;
+        document.getElementById('text2').textContent = langData.text2;
+        document.getElementById('titre3').textContent = langData.titre3;
+        document.getElementById('text3').textContent = langData.text3;
+        document.getElementById('titre4').textContent = langData.titre4;
+        document.getElementById('text4').textContent = langData.text4;
+        document.getElementById('titre5').textContent = langData.titre5;
+        document.getElementById('text5').textContent = langData.text5;
+        document.getElementById('titre6').textContent = langData.titre6;
+        document.getElementById('text6').textContent = langData.text6;
+        document.getElementById('titre7').textContent = langData.titre7;
+        document.getElementById('text7').textContent = langData.text7;
+        document.getElementById('titre8').textContent = langData.titre8;
+        document.getElementById('text8').innerHTML = langData.text8;
+        document.getElementById('titre9').innerHTML = langData.titre9;
+        document.getElementById('text9').textContent = langData.text9;
+        document.getElementById('titre10').textContent = langData.titre10;
+        document.getElementById('titre11').textContent = langData.titre11;
+        document.getElementById('text10').textContent = langData.text10;
+        document.getElementById('titre12').textContent = langData.titre12;
+        document.getElementById('text11').textContent = langData.text11;
+        document.getElementById('titre13').textContent = langData.titre13;
+        document.getElementById('text12').textContent = langData.text12;
+        document.getElementById('titre14').textContent = langData.titre14;
+        document.getElementById('text13').textContent = langData.text13;
+        document.getElementById('titre15').textContent = langData.titre15;
+        document.getElementById('text14').textContent = langData.text14;
+        document.getElementById('titre16').innerHTML = langData.titre16;
+        document.getElementById('text15').textContent = langData.text15;
+        document.getElementById('titre17').textContent = langData.titre17;
+        document.getElementById('titre18').textContent = langData.titre18;
+        document.getElementById('titre19').textContent = langData.titre19;
+        document.getElementById('titre20').textContent = langData.titre20;
+        document.getElementById('titre21').textContent = langData.titre21;
+        document.getElementById('titre22').textContent = langData.titre22;
+        document.getElementById('button1').textContent = langData.button1;
+        document.getElementById('button2').textContent = langData.button2;
+        document.getElementById('button3').textContent = langData.button3;
+        document.getElementById('button4').textContent = langData.button4;
+        document.getElementById('button5').textContent = langData.button5;
+        document.getElementById('button6').textContent = langData.button6;
+        document.getElementById('button7').textContent = langData.button7;
+        document.getElementById('button8').textContent = langData.button8;
+        document.getElementById('button9').textContent = langData.button9;
+        document.getElementById('button10').textContent = langData.button10;
+        document.getElementById('button11').textContent = langData.button11;
+        document.getElementById('subscribe-button').value = langData.subscribe;
+        
+        document.getElementById('titre23').textContent = langData.titre23;
+        document.getElementById('button12').textContent = langData.button12;
+
+        // Stocke la langue choisie dans localStorage
+        localStorage.setItem('selectedLanguage', lang);
+
+        // Met à jour l'URL pour inclure la langue
+        updateURLWithLanguage(lang);
+    }
+}
+
+// Fonction pour mettre à jour l'URL avec le paramètre de langue
+function updateURLWithLanguage(lang) {
     const url = new URL(window.location.href);
     url.searchParams.set('lang', lang);
-    window.history.replaceState({}, '', url); // Met à jour l'URL sans recharger la page
-  }
+    window.history.replaceState({}, '', url); // Mettre à jour l'URL sans recharger la page
+}
 
-  // Écouteurs pour les boutons de langue
-  document.getElementById('fr-button').addEventListener('click', () => switchLanguage('fr'));
-  document.getElementById('en-button').addEventListener('click', () => switchLanguage('en'));
+// Écouteurs pour les boutons de langue
+document.getElementById('fr-button').addEventListener('click', () => switchLanguage('fr'));
+document.getElementById('en-button').addEventListener('click', () => switchLanguage('en'));
+
 </script>
+
   </body>
 </html>
