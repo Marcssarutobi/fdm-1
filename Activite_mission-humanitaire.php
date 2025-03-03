@@ -123,47 +123,42 @@
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image3.jpg" alt="">
                                 </div>
                                 <div class="col">
-                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image4.jpg" alt="">
+                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image5.jpg" alt="">
                                 </div>
                             </div>
                             <div class="row text-center mt-3">
-                                <div class="col">
-                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image5.jpg" alt="">
-                                </div>
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image6.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="row text-center mt-3">
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image7.jpg" alt="">
                                 </div>
+                            </div>
+                            <div class="row text-center mt-3">
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image8.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="row text-center mt-3">
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image9.jpg" alt="">
                                 </div>
+                            </div>
+                            <div class="row text-center mt-3">
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image10.jpg" alt="">
                                 </div>
-                            </div>
-                            <div class="row text-center mt-3">
                                 <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image11.jpg" alt="">
                                 </div>
-                                <div class="col">
-                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image12.jpg" alt="">
-                                </div>
                             </div>
                             <div class="row text-center mt-3">
                                 <div class="col">
+                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image12.jpg" alt="">
+                                </div>
+                                <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image13.jpg" alt="">
                                 </div>
-                                
                             </div>
+                            
                         </div>
                     </div>
                 </div>
