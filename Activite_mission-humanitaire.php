@@ -144,6 +144,14 @@
                             </div>
                             <div class="row text-center mt-3">
                                 <div class="col">
+                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image14.jpg" alt="">
+                                </div>
+                                <div class="col">
+                                    <img class="img-fluid fixed-size" src="assets/images/Activité7/image15.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="row text-center mt-3">
+                                <div class="col">
                                     <img class="img-fluid fixed-size" src="assets/images/Activité7/image10.jpg" alt="">
                                 </div>
                                 <div class="col">
