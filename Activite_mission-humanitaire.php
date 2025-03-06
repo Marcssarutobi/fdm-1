@@ -316,7 +316,7 @@ function validateEmail(email) {
   let translations = {};
 
   // Charger le fichier JSON de traductions
-  fetch('trans.json')
+  fetch('transformation.json')
     .then(response => response.json())
     .then(data => {
       translations = data; // Stocke les traductions dans l'objet
